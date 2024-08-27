@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .counter {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  }
+
+  .work-process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .contact-us {
+    background: url(./assets/bg.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
